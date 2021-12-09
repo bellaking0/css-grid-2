@@ -11,18 +11,36 @@ figure {
 }
 
 // Your assignment code starts here //
-.menu {
-  display: grid;
-  grid-template-rows: ;
-  position: absolute;
+/* If the screen size is 480px wide or less */
+@media screen and (min-width: 480px) {
+  .menu {
+  .discover-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 19px;
+    grid-row-gap: 31px;
+  }
 }
-.thumbnails {
-  display: grid;
-  grid-template-columns: 311px 311px 311px 311px;
-  position: absolute;
 }
-
+/* If the screen size is 1024px wide or more */
 @media only screen and (min-width: 1024px) {
   // Your assignment's code for large screens starts here
-  
+  .menu {
+    .discover-menu {
+      display: grid;
+      grid-template-columns: 436px;
+    }
+    .thumbnails {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 43px;
+      grid-row-gap: 27px;
+    }
+  }
 }
