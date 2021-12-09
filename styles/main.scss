@@ -10,7 +10,17 @@ figure {
   margin: 0;
 }
 
-// Your assignment code starts here
+// Your assignment code starts here //
+.menu {
+  display: grid;
+  grid-template-rows: ;
+  position: absolute;
+}
+.thumbnails {
+  display: grid;
+  grid-template-columns: 311px 311px 311px 311px;
+  position: absolute;
+}
 
 @media only screen and (min-width: 1024px) {
   // Your assignment's code for large screens starts here
